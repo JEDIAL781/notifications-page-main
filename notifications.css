@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Plus Jakarta";
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta";
+  background-color: hsl(205, 33%, 90%);
+}
+img {
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  background-color: white;
+  padding: 16px 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.not-count {
+  background-color: hsl(219, 85%, 26%);
+  color: #ffffff;
+  padding: 2px 16px;
+  border-radius: 5px;
+  font-size: 23px;
+}
+header button {
+  border: none;
+  border-color: transparent;
+  color: hsl(219, 85%, 26%);
+  font-size: 1rem;
+}
+header button:hover {
+  cursor: pointer;
+}
+
+/*nootifications*/
+.notifications {
+  max-width: 600px;
+  background-color: white;
+  padding: 16px 20px;
+}
+.notification {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  gap: 16px;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 5px;
+  color: hsl(219, 12%, 42%);
+}
+.notification.active {
+  background-color: hsl(205, 33%, 90%);
+}
+.notification-text .user {
+  font-weight: bold;
+  color: initial;
+}
+.notification-text .user:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.notification-text .post {
+  color: hsl(220, 4%, 15%);
+}
+.notification-text .post:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.notification-text .group {
+  text-decoration: none;
+  color: hsl(219, 85%, 26%);
+  font-weight: bold;
+}
+.notification-text .group:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.not-dot {
+  color: hsl(1, 90%, 64%);
+  font-size: 25px;
+}
+.notification-text .time {
+  color: hsl(219, 14%, 63%);
+}
+.notification-text .message {
+  border: 1px solid hsl(219, 14%, 63%);
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.notification.picture-comment {
+  grid-template-columns: 15% 65% 15%;
+}
+@media screen and (min-width: 600px) {
+  header {
+    margin: 40px auto 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .notifications {
+    margin: 0px auto 40px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
